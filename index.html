@@ -6,106 +6,70 @@
      <link href="stylesheets/bootstrap.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="stylesheets/application.css.scss">
   </head>
-<body>
-
-   <!-- 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand logo-navbar" href="http://localhost:3000/"><img src="./sign_up_files/logo-craft-651b9632453689720368383331c7a78998a89b503d5925a431d0ae54b13004ec.png" alt="Logo craft"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-
-            <li><a href="http://localhost:3000/">Tools</a></li>
-              <li><a href="http://localhost:3000/sign_up?redirect_to=%2F" type="button" data-toggle="modal" data-target="#login_modal">Log in</a></li>
-              <li class="navbar-registration"><a type="button" class="btn btn-navbar" data-toggle="modal" data-target="#registration_modal">
-      Registration
-    </a></li>
-
-            
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-  -->
-
-
-
-
-<div class="main">
-  <div class="container">
-    <div class="row">
-      <div id="main-form-slider">
-        <div id="register-slider">
-          <div class="form-header">
-              <h2>Create your account</h2>
-              <h4>It's free!</h4>
-          </div>
-            <a class="btn btn-facebook" href="http://localhost:3000/auth/facebook">Connect with Facebook</a>
-            <form class="new_user" id="new_user" action="http://localhost:3000/" accept-charset="UTF-8" method="post">
-              <input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kG2f0zAhieod5c4JGNlOWRWQ8HGvyb0/mBKJmfWw+kPGNVxc1DVBptuvftgWqpPeLwRb3Bc+uYCjff7078+vTw==">
-            
-                <div class="field userfield">
-                  <input autofocus="autofocus" placeholder="Create a username" class="form-control" type="text" name="user[username]" id="user_username">
-                </div>
-                <br>
-                <div class="field mailfield">
-                   <input placeholder="Enter your email" class="form-control" type="email" value="" name="user[email]" id="user_email">
-                </div>
-                <br>
-                 <div class="field passfield">
-                   <input autocomplete="off" placeholder="Choose your password" class="form-control" type="password" name="user[password]" id="user_password">
-                 </div>
-              </form>
-            </div>
-            <div class="actions btn-fixed">
-                  <input type="hidden" name="redirect_to" id="redirect_to" value="/">
-                  <input type="submit" name="commit" value="Sign up" class="btn">
-            </div>
-            <div class="img-login">
-              <img src="images/home-header.png">
-            </div>
-            <div id="login-slider">
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div id="main-form-slider">
+            <div id="register-slider">
               <div class="form-header">
-                  <h2>Log in</h2>
-                  <h4>Welcome back!</h4>
+                  <h2>Create your account</h2>
+                  <h4>It's free!</h4>
               </div>
-               <a class="btn btn-facebook" href="http://localhost:3000/auth/facebook">Connect with Facebook</a>
-               <form class="new_user" id="new_user" action="http://localhost:3000/login" accept-charset="UTF-8" method="post">
-                <input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kG2f0zAhieod5c4JGNlOWRWQ8HGvyb0/mBKJmfWw+kPGNVxc1DVBptuvftgWqpPeLwRb3Bc+uYCjff7078+vTw==">
-                 <div class="field mailfield">
-                    <input autofocus="autofocus" placeholder="Enter your email" class="form-control" type="email" value="" name="user[email]" id="user_email">
-                  </div>
-                  <br>
-                  <div class="field passfield">
-                    <input autocomplete="off" placeholder="Enter your password" class="form-control" type="password" name="user[password]" id="user_password">
-                  </div>
-                  <br>
-                    <div class="field remember">
-                      <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
-                      Remember me 
+                <a class="btn btn-facebook" href="http://localhost:3000/auth/facebook">Connect with Facebook</a>
+                <form class="new_user" id="new_user" action="http://localhost:3000/" accept-charset="UTF-8" method="post">
+                  <input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kG2f0zAhieod5c4JGNlOWRWQ8HGvyb0/mBKJmfWw+kPGNVxc1DVBptuvftgWqpPeLwRb3Bc+uYCjff7078+vTw==">
+                    <div class="field userfield">
+                      <input autofocus="autofocus" placeholder="Create a username" class="form-control" type="text" name="user[username]" id="user_username">
                     </div>
-                   </form>
-                 </div>
-                  <div class="actions btn-fixed-login">
-                        <input type="hidden" name="redirect_to" id="redirect_to" value="/">
-                        <input type="submit" name="commit" value="Log in" class="btn btn-grey">
+                    <br>
+                    <div class="field mailfield">
+                       <input placeholder="Enter your email" class="form-control" type="email" value="" name="user[email]" id="user_email">
+                    </div>
+                    <br>
+                     <div class="field passfield">
+                       <input autocomplete="off" placeholder="Choose your password" class="form-control" type="password" name="user[password]" id="user_password">
+                     </div>
+                  </form>
+                </div>
+                <div class="actions btn-fixed">
+                      <input type="hidden" name="redirect_to" id="redirect_to" value="/">
+                      <input type="submit" name="commit" value="Sign up" class="btn">
+                </div>
+                <div class="img-login">
+                  <img src="images/home-header.png">
+                </div>
+                <div id="login-slider">
+                  <div class="form-header">
+                      <h2>Log in</h2>
+                      <h4>Welcome back!</h4>
                   </div>
+                  <a class="btn btn-facebook" href="http://localhost:3000/auth/facebook">Connect with Facebook</a>
+                  <form class="new_user" id="new_user" action="http://localhost:3000/login" accept-charset="UTF-8" method="post">
+                    <input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="kG2f0zAhieod5c4JGNlOWRWQ8HGvyb0/mBKJmfWw+kPGNVxc1DVBptuvftgWqpPeLwRb3Bc+uYCjff7078+vTw==">
+                    <div class="field mailfield">
+                        <input autofocus="autofocus" placeholder="Enter your email" class="form-control" type="email" value="" name="user[email]" id="user_email">
+                    </div>
+                    <br>
+                    <div class="field passfield">
+                        <input autocomplete="off" placeholder="Enter your password" class="form-control" type="password" name="user[password]" id="user_password">
+                    </div>
+                     <br>
+                    <div class="field remember">
+                          <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+                          Remember me 
+                    </div>
+                  </form>
+                </div>
+                <div class="actions btn-fixed-login">
+                    <input type="hidden" name="redirect_to" id="redirect_to" value="/">
+                   <input type="submit" name="commit" value="Log in" class="btn btn-grey">
                 </div>
               </div>
-            </div>
-          </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+             </div>
+           </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/main.js"></script>
 </body>
