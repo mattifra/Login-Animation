@@ -1,0 +1,672 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require font-awesome
+ *= require animate.min
+ *= require active_admin/editor/wysiwyg
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "toastr";
+
+
+  body {
+    background: #fff;
+    font-family: 'Asap', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #6C6C6C;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  p {
+    color: #868686;
+  }
+
+  a{
+    color:#454545;
+  }
+
+  a:link {
+    outline: none;
+    text-decoration: none;
+  }
+
+  a:visited {
+    outline: none;
+    text-decoration: none;
+  }
+
+  a:hover {
+    outline: none;
+    text-decoration:none;
+  }
+
+  a:focus {
+    outline:none;
+    outline-offset: 0;
+  }
+
+  a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+
+
+button:focus {
+  outline: none;
+}
+
+  .form-control {
+    text-align: center;
+  }
+
+  .overflow{
+    overflow: hidden;
+  }
+
+  .uppercase{
+    text-transform: uppercase;
+  }
+
+
+  #action .col-sm-5{
+    position: absolute;
+
+    top: 0;
+    height: 100%;
+    right: 0;
+  }
+
+
+  .align-right{
+    text-align: right;
+  }
+
+  .inline{
+    display: inline-block;
+  }
+
+ 
+
+
+
+.scaleIn {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/***********************************************************
+BOTTONI
+**************************************************************/
+
+.btn {
+  width: 100%;
+  background-color: #EF8D08;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+  box-shadow: none;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+.btn-primary {
+  border: none;
+}
+
+.btn:hover, 
+.btn:focus{
+  color: #fff;
+  background-color: #ce7602;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: px;
+  margin-top: 5px;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.btn-facebook:hover, 
+.btn-facebook:focus{
+  color: #fff;
+  background-color: #2D4475;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-navbar {
+  background-color: #74c180 !important;
+  text-transform: none;
+  padding-top: 8px !important; 
+  padding-bottom: 8px !important;
+  color: #fff !important;
+}
+
+.btn-navbar:hover {
+  background-color: #16632d !important;
+}
+
+.btn-creator {
+  background-color: #74c180;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.btn-creator:hover {
+  background-color: #16632d !important;
+}
+
+/****************************************************
+NAVBAR
+******************************************************/
+
+  .social-icons.pull-right{
+    float: left !important;
+  }
+
+  #header .navbar-inverse .navbar-toggle,
+  #header .navbar-inverse .navbar-toggle:focus {
+    border-color: #00aeef;
+    margin-top: 15px;
+    margin-right: 5px;
+    outline: none;
+  }
+
+  .navbar-header .navbar-toggle .icon-bar {
+    background-color: #00aeef;
+  }
+
+  #header .navbar-inverse .navbar-toggle:hover {
+    background: #00aeef;
+  }
+
+  #header .navbar-inverse .navbar-toggle:hover .icon-bar {
+    background: #fff;
+  }
+ 
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    border-top: 0;
+  }
+
+  .navbar.navbar-inverse {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .social-icons ul li:first-child{
+    padding-left: 0;
+  }
+
+  .search {
+    top: -40px;
+  }
+
+  #header .navbar-nav.navbar-right li > a > i {
+    display: inline-block;
+    float: right;
+  }
+
+  #header .navbar-nav.navbar-right li > a {
+    padding: 10px 0;
+  }
+
+  #header .navbar-nav li ul.sub-menu li a {
+    padding: 5px 10px;
+  }
+
+  #header .navbar-inverse .navbar-nav li.active > a, 
+  #header .navbar-inverse .navbar-nav li.active > a:focus, 
+  #header .navbar-nav.navbar-right li > a:hover {
+    border: none;
+  }
+
+.logo-navbar {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.logo-navbar img {
+  height: 46px;
+}
+
+.navbar-registration {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus {
+        outline:0px !important;
+    }
+
+form input[type=text], form input[type=password], form input[type=email], form input[type=number], form input[type=url], form input[type=tel], form input[type=date], form textarea {
+      width: 100%;
+    }
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #454545;
+  font-size: 0.8em;
+}
+
+/**********************************************************
+HEADER
+************************************************************/
+
+#home-slider {
+  background: #EBF8FF; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#home-slider .main-slider {
+  height: 500px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.slide-text {
+  padding: 130px 0 0 0;
+}
+
+#home-slider h1 {
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  font-size: 2.2em;
+
+}
+
+#home-slider h2 {
+  font-size: 1.5em;
+    margin: 0 0 40px 0;
+
+}
+ .btn-home {
+    width: 90%;
+  }
+
+  .magic-box {
+    padding-top: 50px;
+  }
+
+  .magic-box img {
+    display: none;
+  }
+
+
+
+
+
+
+
+/***********************************************************
+REGISTRATION/LOGIN ANIMATION
+**************************************************************/
+
+#main-form{
+  padding: 70px 0px 60px 0px;
+}
+
+#main-form-slider {
+  padding: 95px 0px 60px 0px;
+  position: relative;
+}
+
+#main-form-slider h2{
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+#main-form-slider .form-header {
+  text-align: center;
+}
+
+
+
+.userfield {
+  background: url(../images/iconaUsername.png) no-repeat;
+}
+
+.mailfield {
+  background: url(../images/iconaMail.png) no-repeat;
+}
+
+.passfield {
+  background: url(../images/iconaPassword.png) no-repeat;
+}
+
+.field {
+  background-size: 35px;
+  background-position: 10px 24px;
+}
+
+.remember {
+  font-size: 1.2em;
+}
+.remember input {
+  margin: 20px;
+}
+
+
+#register-slider {
+  position: absolute;
+  right: 15px;
+  width: 100%;
+  max-width: 450px;}
+
+#login-slider {
+  position: absolute;
+  left: -1100px;
+  display: none;
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #CDCDCD;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: left;
+  font-size: 1.3em;
+  padding: 30px 35px 13px 65px;
+  height: auto;
+  color: #58585B;
+}
+
+.modal-dialog hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+@-webkit-keyframes autofill {
+    to {
+        color: #58585B;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.btn-facebook {
+  margin: 20px 0 20px;
+  text-align: left;
+  text-transform: none;
+  font-size: 1.3em;
+  padding: 20px 20px 20px 65px;
+  height: auto;
+  background:   url(../images/iconaFacebook.png) no-repeat,
+                #6D89C8;
+  background-size: 35px;
+  background-position: 10px 50%;
+}
+
+.btn-grey {
+      background: #F8F8F8;
+      border: 2px solid #CDCDCD;
+      color: #CDCDCD;
+}
+
+.btn-grey:hover {
+   background: #e4e4e4;
+  }
+
+.btn-fixed {
+  position: absolute;
+  right: 15px;
+  margin: 110px 40px 0 0;
+ 
+ }
+
+.btn-fixed .btn {
+  margin-top: 45px;
+  padding: 15px;
+  font-size: 2em;
+  border-radius: 40px;
+  min-width: 360px;
+}
+
+.btn-fixed-login {
+  position: absolute;
+  left: 15px;
+    margin: 110px 0 0 40px;
+}
+
+.btn-fixed-login .btn {
+  margin-top: 45px;
+  padding: 15px;
+  font-size: 2em;
+  border-radius: 40px;
+  min-width: 360px;
+}
+
+#error_explanation {
+  text-align: left;
+}
+
+#error_explanation li {
+  font-size: 1em;
+
+}
+
+#error_explanation h2 {
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.img-login img {
+    width: 100%;
+    display: block;
+  }
+
+  .img-login {
+    position: absolute;
+    left: 15px;
+    width: 440px;
+    top: 200px;
+  }
+
+.btn-submit {
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 20px;
+  max-width: 350pc;
+}
+
+
+
+
+
+@media only screen and (min-width : 768px) {
+
+
+
+
+
+
+}
+
+@media only screen and (min-width : 992px) {
+
+.magic-box img {
+    width: 103%;
+    display: block;
+  }
+
+.craftain-information {
+  margin: 20px 0 0 0;
+}
+
+.show-username {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.user-info p {
+  text-align: left;
+}
+
+.project-content {
+  padding-right: 50px;
+}
+
+.button-bottom {
+  padding-top: 80px;
+}
+
+.project-creator {
+  padding-left: 50px;
+}
+
+.logo-left {
+  padding-bottom: 0px;
+}
+
+
+.new-thumb-left {
+  padding-right: 0px;
+}
+
+.trailer-right {
+  padding-left: 0px;
+}
+
+.shares {
+  text-align: right;
+}
+
+/****************************************************************
+FOOTER
+******************************************************************/
+
+.bottom  {
+  text-align: left;
+}
+
+.copyright-text {
+  text-align: right;
+}
+.privacy {
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+
+
+}
+
+
+@media only screen and (min-width : 1200px) {
+
+.container {
+  width: 1100px;
+}
+
+.container-short {
+  padding: 0 90px 0 90px;
+}
+
+.tutorial {
+  height: 285px;
+}
+
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
