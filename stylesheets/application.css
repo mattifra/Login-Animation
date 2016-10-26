@@ -562,97 +562,25 @@ input:-webkit-autofill {
 
 
 
-@media only screen and (min-width : 768px) {
 
 
+@media only screen and (max-width : 992px) {
 
 
-
-
+.img-login {
+  display: none;
 }
 
-@media only screen and (min-width : 992px) {
-
-.magic-box img {
-    width: 103%;
-    display: block;
-  }
-
-.craftain-information {
-  margin: 20px 0 0 0;
+#login-slider, #register-slider {
+  display: block;
+  margin: 0 auto;
+  position: static;
 }
 
-.show-username {
-  text-align: left;
-  margin: 10px 0;
-}
-
-.user-info p {
-  text-align: left;
-}
-
-.project-content {
-  padding-right: 50px;
-}
-
-.button-bottom {
-  padding-top: 80px;
-}
-
-.project-creator {
-  padding-left: 50px;
-}
-
-.logo-left {
-  padding-bottom: 0px;
-}
-
-
-.new-thumb-left {
-  padding-right: 0px;
-}
-
-.trailer-right {
-  padding-left: 0px;
-}
-
-.shares {
-  text-align: right;
-}
-
-/****************************************************************
-FOOTER
-******************************************************************/
-
-.bottom  {
-  text-align: left;
-}
-
-.copyright-text {
-  text-align: right;
-}
-.privacy {
-  padding-top: 2px;
-  padding-bottom: 0px;
-}
-
-
-
-}
-
-
-@media only screen and (min-width : 1200px) {
-
-.container {
-  width: 1100px;
-}
-
-.container-short {
-  padding: 0 90px 0 90px;
-}
-
-.tutorial {
-  height: 285px;
+.btn-fixed, .btn-fixed-login {
+  position: static;
+  margin: 10px auto 50px auto;
+  max-width: 400px;
 }
 
 }
